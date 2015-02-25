@@ -30,9 +30,10 @@ body {
   background-color: #333;
 }
 body {
-  color: #fff;
+  color: #ccc;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -63,8 +64,10 @@ body {
  * Header
  */
 .masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+	font-family: "Ceviche One", serif;
+	font-size: 40px;
+	color: rgb(255,100,15);
 }
 
 .masthead-nav > li {
@@ -79,20 +82,22 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
+  color: rgba(255,100,15,.75);
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
   border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom-color: rgba(255,100,15,.25);
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
   color: #fff;
+  color: rgba(255,100,15,.75);
   border-bottom-color: #fff;
+  border-bottom-color: rgba(255,100,15,.25);
 }
 
 @media (min-width: 768px) {
@@ -122,10 +127,21 @@ body {
 	font-size: 100px;
 	color: rgb(255,100,15);
 }
-.coming-soon {
-	font-size: 16px;
-	color: #999; /* IE8 proofing */
-	color: rgba(255,255,255,.5);
+
+.lead {
+	font-size: 18px;
+}
+
+.btn-how-it-works {
+	color: rgb(255,255,255);
+	background-color: rgba(245, 245, 245, 0.4);
+}
+
+.btn-go {
+	font-weight: bold;
+}
+
+.input-city {
 }
 
 /*
