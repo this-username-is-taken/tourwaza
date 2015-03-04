@@ -43,7 +43,7 @@ body {
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
-	/* background-image: url("images/site/home_bg2.jpg"); */
+	/* background-image: url("img/site/home_bg2.jpg"); */
   background-size: 100%;
 	background-position: 0px 100px;
   background-repeat: no-repeat;
