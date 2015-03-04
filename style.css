@@ -14,7 +14,6 @@ a:hover {
 .btn-default:hover,
 .btn-default:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #ccc;
   border: 1px solid #ccc;
 }
@@ -31,7 +30,6 @@ body {
 body {
   color: #777;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 	font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -45,6 +43,10 @@ body {
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
+	/* background-image: url("images/site/home_bg2.jpg"); */
+  background-size: 100%;
+	background-position: 0px 100px;
+  background-repeat: no-repeat;
 }
 .cover-container {
   margin-right: auto;
@@ -82,6 +84,7 @@ body {
 	font-family: "Ceviche One", serif;
 	font-size: 60px;
 	color: rgb(255,100,15);
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 .masthead-nav > li {
@@ -96,22 +99,22 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #fff; /* IE8 proofing */
-  color: rgba(255,100,15,.75);
+  color: rgb(255,100,15);
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
   border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,100,15,.75);
+  border-bottom-color: rgb(255,100,15);
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
   color: #fff;
-  color: rgba(255,100,15,.75);
+  color: rgb(255,100,15);
   border-bottom-color: #fff;
-  border-bottom-color: rgba(255,100,15,.75);
+  border-bottom-color: rgb(255,100,15);
 }
 
 @media (min-width: 768px) {
@@ -144,16 +147,15 @@ body {
  */
 
 @media (min-width: 768px) {
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
   /* Handle the widths */
   .masthead,
   .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+	.city-search {
+		margin: 180px 0;
+	}
 }
 
 @media (min-width: 992px) {
@@ -177,14 +179,15 @@ body {
   font-weight: bold;
 }
 
-.cover-heading {
-	font-family: "Ceviche One", serif;
-	font-size: 100px;
-	color: rgb(255,100,15);
+.city-search {
 }
 
-.lead {
+.city-search p {
 	font-size: 18px;
+}
+
+.city-search .row {
+	padding: 0 50px;
 }
 
 .btn-go {
