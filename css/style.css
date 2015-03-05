@@ -154,7 +154,7 @@ body {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
 	.city-search {
-		margin: 180px 0;
+		margin: 100px 0;
 	}
 }
 

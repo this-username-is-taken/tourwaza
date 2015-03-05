@@ -1,4 +1,10 @@
 $(function() {
+
+	$('.btn-go').click(function(){
+	   window.location.href='london.html';
+	});
+
+	/////////////////////
 	var substringMatcher = function(strs) {
 	  return function findMatches(q, cb) {
 	    var matches, substrRegex;
